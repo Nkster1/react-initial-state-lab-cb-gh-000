@@ -2,11 +2,11 @@
 import React from "react";
 
 class Bomb extends React.Component {
-  constructor(){
+  constructor(props){
     super();
 
     this.state =  {
-      currentSlideIndex: 0
+      secondsLeft: `${props.initialCount}`
     }
   }
   render () {
